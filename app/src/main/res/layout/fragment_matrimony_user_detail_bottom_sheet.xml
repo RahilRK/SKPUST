@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:id="@+id/bottomSheet"
+    >
+
+    <RelativeLayout
+        android:id="@+id/collapseBottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rounded_curve_whitebg_2"
+        >
+
+        <LinearLayout
+            android:id="@+id/expandView"
+            android:layout_width="@dimen/margin86"
+            android:layout_height="@dimen/margin8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin8"
+            android:background="@drawable/rounded_curve_graybg"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/expandView"
+            android:padding="@dimen/margin16"
+            >
+
+            <TextView
+                android:id="@+id/collapseUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/businessowner"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/sp23"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/collapseUserOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16"
+                android:text="Software Engineer, Valsad"
+                />
+
+            <TextView
+                android:id="@+id/collapseUserDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="27 yrs, 5.4ft"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/collapseUserCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vapi_gujarat"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/expandBottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/expandToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin16"
+            android:paddingEnd="@dimen/margin16"
+            android:paddingBottom="@dimen/margin16">
+
+            <TextView
+                android:id="@+id/expandUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/businessowner"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/sp23"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/expandUserOccupation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16"
+                android:text="Software Engineer, Valsad"
+                />
+
+            <TextView
+                android:id="@+id/expandUserDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="27 yrs, 5.4ft"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/expandUserCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vapi_gujarat"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginEnd="@dimen/margin8"
+            android:layout_marginBottom="@dimen/margin16"
+            android:background="@color/grayCardbg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/basic_details"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/margin16"
+            android:drawablePadding="@dimen/margin8"
+            android:drawableTint="@color/secondaryColor"
+            app:drawableStartCompat="@drawable/ic_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/religion"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userReligion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/hindu"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/cast"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userCast"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Patel"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/mother_tongue"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userMotherTongue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Gujarati"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin1"
+            android:layout_marginTop="@dimen/margin16"
+            android:layout_marginBottom="@dimen/margin16"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginEnd="@dimen/margin8"
+            android:background="@color/grayCardbg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/personal_details"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/margin16"
+            android:drawablePadding="@dimen/margin8"
+            android:drawableTint="@color/secondaryColor"
+            app:drawableStartCompat="@drawable/ic_user_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin8"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/marital_status"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userMaritalStatus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Not Married"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/birth_place"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userBirthPlace"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Vapi"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_group"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userBloodGroup"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="A+"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingStart="@dimen/margin16"
+            android:paddingTop="@dimen/margin4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/qualification"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+            <TextView
+                android:id="@+id/userQualification"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="MCA"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

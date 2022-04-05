@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/drawable/ic_call.xml" value="0.146875" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/drawable/ic_email.xml" value="0.146875" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/drawable/ic_left_arrow_white.xml" value="0.146875" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/activity_main.xml" value="0.134765625" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/fragment_business_detail.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/fragment_feed.xml" value="0.134765625" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/fragment_home.xml" value="0.134765625" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/fragment_login.xml" value="0.134765625" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/fragment_menu.xml" value="0.134765625" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/homebusinesslist_item.xml" value="0.134765625" />
+        <entry key="..\:/Android/Testing/SKPUST/app/src/main/res/layout/homeslider_item.xml" value="0.134765625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_call.xml" value="0.18385416666666668" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_close.xml" value="0.18385416666666668" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_emergency_sos.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_gallery.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_heart.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_home.xml" value="0.1275" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_house.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18385416666666668" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_location.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_menu.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_new_moon.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_notification.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_people.xml" value="0.265625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_search.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_search_business.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_search_icon.xml" value="0.1275" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_search_people.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_star.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/ic_whatsapp.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/rounded_curve_graybg.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/rounded_curve_orangebg.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/rounded_curve_whitebg.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/drawable/rounded_curve_whitebg_2.xml" value="0.137890625" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/business_images_list_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/demo.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/demo_2.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/familymemberlist_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/featurelist_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/feed_detail_slider_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/feed_recycler_viewpager_item.xml" value="0.14666666666666667" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/feed_viewpager_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_business_detail.xml" value="0.2" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_contact_us.xml" value="0.14666666666666667" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_feed.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_feed_detail.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_history.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_login.xml" value="0.13333333333333333" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_matrimony.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_matrimony_user_detail.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_matrimony_user_detail_bottom_sheet.xml" value="0.14666666666666667" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_menu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_otp.xml" value="0.16770833333333332" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_people.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_people_detail.xml" value="0.25" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_people_search.xml" value="0.16666666666666666" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_search_business.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_send_feedback.xml" value="0.14666666666666667" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_set_up_page.xml" value="0.16770833333333332" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/fragment_splash_screen.xml" value="0.14666666666666667" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/homebusinesslist_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/homeslider_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/matrimony_user_detail_slider_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/matrimonyuserlist_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/people_searchlist_item.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/peoplelist_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/rounded_curve_graybg.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/layout/view_alertsbadge.xml" value="0.22" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/addnote_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/businessdetail_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/feed_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/home_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/home_tab_menu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/main_tab_menu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/matrimony_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/people_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/people_search_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/menu/searchbusiness_optionmenu.xml" value="0.12578125" />
+        <entry key="..\:/Rahil/AndroidProjects/SKPUST/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

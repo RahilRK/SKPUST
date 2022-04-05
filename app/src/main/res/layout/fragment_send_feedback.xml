@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.SendFeedbackFrag">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_left_arrow"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin16"
+        >
+
+        <ImageView
+            android:id="@+id/ivfeedbackimg"
+            android:layout_width="@dimen/margin154"
+            android:layout_height="@dimen/margin154"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_gallery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivfeedbackimg"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tap_above_to_pick_image"
+            android:textColor="@color/textColorHigh"
+            android:textSize="@dimen/sp16"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/feedbackTitlelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_title"
+        app:boxBackgroundColor="@color/white"
+        app:helperTextEnabled="true"
+        app:helperText="@string/enter_title"
+        app:counterEnabled="true"
+        app:counterMaxLength="50"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
+        android:layout_marginBottom="@dimen/margin8"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedbackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="50"
+            android:text=""
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/longdesctlo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_description"
+        app:boxBackgroundColor="@color/white"
+        app:helperTextEnabled="true"
+        app:helperText="@string/enter_description"
+        app:counterEnabled="true"
+        app:counterMaxLength="200"
+        android:layout_marginStart="@dimen/margin16"
+        android:layout_marginEnd="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
+        android:layout_marginBottom="@dimen/margin8"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/longdesc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin100"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:gravity="top"
+            android:maxLength="100"
+            android:text=""
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendfeedbackbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin8"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:text="@string/send"/>
+
+</LinearLayout>

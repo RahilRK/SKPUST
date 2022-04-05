@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ProfileFrag.ProfileFrag">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:navigationIcon="@drawable/ic_left_arrow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/profileDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/userImg"
+                    android:layout_width="@dimen/margin124"
+                    android:layout_height="@dimen/margin124"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/margin16"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:layout_marginEnd="@dimen/margin16"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/skpust_noname_logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/userImg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/businessowner"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/sp23"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Software developer"
+                        android:textColor="@color/textColorHigh"
+                        android:textSize="@dimen/sp18" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/familyMemberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileDetailLayout"
+                android:orientation="vertical"
+                android:padding="@dimen/margin16">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Focused and quick-learning Software Engineer with 3 years of experience in computer science, programming, and UX design for various projects and clients."
+                    android:textColor="@color/textColorHigh"
+                    android:textSize="@dimen/sp18" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family"
+                    android:layout_marginTop="@dimen/margin16"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8">
+
+                    <ImageView
+                        android:id="@+id/motherImage"
+                        android:layout_width="@dimen/margin86"
+                        android:layout_height="@dimen/margin86"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin16"
+                        android:src="@drawable/skpust_noname_logo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/motherImage"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sonal Desai"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/sp16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mom"
+                            android:textColor="@color/textColorHigh"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4">
+
+                    <ImageView
+                        android:id="@+id/fatherImage"
+                        android:layout_width="@dimen/margin86"
+                        android:layout_height="@dimen/margin86"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin16"
+                        android:src="@drawable/skpust_noname_logo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/fatherImage"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gaurav Desai"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/sp16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Father"
+                            android:textColor="@color/textColorHigh"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4">
+
+                    <ImageView
+                        android:id="@+id/sisterImage"
+                        android:layout_width="@dimen/margin86"
+                        android:layout_height="@dimen/margin86"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/margin16"
+                        android:src="@drawable/skpust_noname_logo" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/sisterImage"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sonali Desai"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/sp16"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sister"
+                            android:textColor="@color/textColorHigh"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/personalDetailCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/margin0"
+                app:cardCornerRadius="@dimen/margin8"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginStart="@dimen/margin16"
+                android:layout_marginEnd="@dimen/margin16"
+                android:layout_below="@id/familyMemberLayout"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayCardbg"
+                    android:padding="@dimen/margin12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Detail"
+                        android:padding="@dimen/margin8"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"/>
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/businessowner"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_user"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_91_7405777863"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_call"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="akash211@gmail.com"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_email"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DOB: 1st Aug 1993"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_calendar"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userBloodGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blood group: B+"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_blood"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Education: B.Tech, M.Tech"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_edu"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userNative"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Native: Porbandar"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_nativity"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userCast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cast: Kadva Patel"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_crowd"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/businessDetailCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personalDetailCardView"
+                app:cardElevation="@dimen/margin0"
+                app:cardCornerRadius="@dimen/margin8"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginStart="@dimen/margin16"
+                android:layout_marginEnd="@dimen/margin16"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayCardbg"
+                    android:padding="@dimen/margin12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/business_detail_title"
+                        android:padding="@dimen/margin8"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"/>
+
+                    <TextView
+                        android:id="@+id/businessCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin4"
+                        android:text=" IGN Infotech - Software Company"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/businessDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin8"
+                        android:text="@string/dash"
+                        android:textColor="@color/textColorHigh"
+                        android:textSize="@dimen/sp16" />
+
+                    <TextView
+                        android:id="@+id/businessContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+91 9874561234"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_call"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/businessEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ignworld@gmail.com"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_email"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/businessWebsite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="www.ignworld.com"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_website"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/businessLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/margin8"
+                        android:drawablePadding="@dimen/margin12"
+                        android:text="@string/business_address"
+                        android:textColor="@color/textColorHigh"
+                        android:textSize="@dimen/sp16"
+                        app:drawableStartCompat="@drawable/ic_location"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/businessDetailCardView"
+                app:cardElevation="@dimen/margin0"
+                app:cardCornerRadius="@dimen/margin8"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginBottom="@dimen/margin16"
+                android:layout_marginStart="@dimen/margin16"
+                android:layout_marginEnd="@dimen/margin16"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayCardbg"
+                    android:padding="@dimen/margin12"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:padding="@dimen/margin8"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"/>
+
+                    <TextView
+                        android:id="@+id/userAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="C-29, Jagan Park Custom road, Chala, Vapi."
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_location"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/userCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vapi_gujarat"
+                        android:textSize="@dimen/sp16"
+                        android:padding="@dimen/margin8"
+                        android:textColor="@color/textColorHigh"
+                        android:drawablePadding="@dimen/margin12"
+                        app:drawableStartCompat="@drawable/ic_city"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

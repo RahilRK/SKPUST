@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginEnd="@dimen/margin8"
+        android:layout_marginBottom="@dimen/margin12"
+        app:cardCornerRadius="@dimen/margin8"
+        app:cardElevation="@dimen/margin8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/businessImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin256"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:layout_marginEnd="@dimen/margin16"
+                android:layout_marginBottom="@dimen/margin16"
+                android:scaleType="fitXY"
+                android:src="@drawable/skpust_noname_logo" />
+
+            <TextView
+                android:id="@+id/businessName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/businessImage"
+                android:layout_marginStart="@dimen/margin16"
+                android:layout_marginEnd="@dimen/margin16"
+                android:text="@string/shubham_developers"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/sp18"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/businessName"
+                android:layout_marginStart="@dimen/margin16"
+                android:layout_marginEnd="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin4"
+                android:layout_marginBottom="@dimen/margin4">
+
+                <RelativeLayout
+                    android:id="@+id/businessCategoryLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4">
+
+                    <TextView
+                        android:id="@+id/businessLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/margin4"
+                        android:text="@string/vapi_gujarat"
+                        android:textColor="@color/textColorLow"
+                        android:textSize="@dimen/sp16"
+                        app:drawableStartCompat="@drawable/ic_location"
+                        app:drawableTint="@color/primaryLightColor" />
+
+                    <TextView
+                        android:id="@+id/businessCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/builder"
+                        android:textColor="@color/textColorHigh"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:layout_below="@id/businessCategoryLayout">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/businessContactNumber"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/_91_7405777863"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textColorHigh"
+                        app:cornerRadius="@dimen/margin8"
+                        app:icon="@drawable/ic_phone"
+                        app:iconTint="@color/primaryLightColor"
+                        app:rippleColor="@color/white" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/viewDetailFab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_right_arrow"
+                        app:backgroundTint="@color/primaryLightColor"
+                        app:fabCustomSize="@dimen/margin32"
+                        app:maxImageSize="@dimen/margin16"
+                        app:shapeAppearanceOverlay="@style/fab_square"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

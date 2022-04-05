@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin256"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin4">
+    <ImageView
+        android:id="@+id/imageViewViewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin256"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/skpust_noname_logo"
+        android:scaleType="fitXY"
+        />
+</com.google.android.material.card.MaterialCardView>

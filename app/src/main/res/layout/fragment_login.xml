@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.LoginFrag.LoginFrag"
+    android:id="@+id/parentView">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="@dimen/margin0"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/margin8"
+            app:navigationIcon="@drawable/ic_close" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/appDetailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar"
+        android:layout_marginTop="@dimen/margin32"
+        android:layout_marginStart="@dimen/margin32"
+        android:layout_marginEnd="@dimen/margin32"
+        >
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="@dimen/margin154"
+            android:layout_height="@dimen/margin154"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/skpust_logo" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/welcomeTextLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appDetailLayout"
+        android:layout_marginTop="@dimen/margin64"
+        android:layout_marginStart="@dimen/margin32"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="@dimen/sp32"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin8"
+            android:background="@color/secondaryColor"
+           />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobileNumbertf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/mobile_number"
+        android:layout_marginTop="@dimen/margin64"
+        android:layout_marginStart="@dimen/margin32"
+        android:layout_marginEnd="@dimen/margin32"
+        app:helperTextEnabled="true"
+        app:helperText="Enter your mobile number"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:prefixText="+91"
+        app:errorTextColor="@color/error"
+        app:startIconDrawable="@drawable/ic_call"
+        app:endIconMode="clear_text"
+        android:layout_below="@id/welcomeTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:text=""
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/loginbtLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNumbertf"
+        android:layout_marginStart="@dimen/margin32"
+        android:layout_marginEnd="@dimen/margin32"
+        android:layout_marginTop="@dimen/margin32"
+        >
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/login"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/sp23"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/loginFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/secondaryColor"
+            android:src="@drawable/ic_next"
+            app:backgroundTint="@color/white"
+            app:elevation="@dimen/margin0"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbtLayout"
+        android:layout_margin="@dimen/margin16"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/margin64"
+            android:layout_height="@dimen/margin64"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

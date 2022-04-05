@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin456"
+    android:layout_margin="@dimen/margin12"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/margin16"
+        app:cardElevation="@dimen/margin8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/userImage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/matrimonyboy_image" />
+
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/userOccupation"
+                    android:paddingStart="@dimen/margin8"
+                    android:text="@string/businessowner"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp23"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/userOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16"
+                    android:text="Software Engineer, Valsad"
+                    android:layout_above="@id/userDOB"
+                    android:paddingStart="@dimen/margin8"
+                    />
+
+                <TextView
+                    android:id="@+id/userDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/userCity"
+                    android:paddingStart="@dimen/margin8"
+                    android:text="27 yrs, 5.4ft"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/userCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/view"
+                    android:paddingStart="@dimen/margin8"
+                    android:text="Surat, Gujarat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin1"
+                    android:layout_above="@id/sendInterestLayout"
+                    android:layout_marginStart="@dimen/margin4"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:layout_marginEnd="@dimen/margin4"
+                    android:layout_marginBottom="@dimen/margin4"
+                    android:background="@color/white" />
+
+                <RelativeLayout
+                    android:id="@+id/sendInterestLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/margin8"
+                    >
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/callNowbt"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="Call Now"
+                        android:textSize="@dimen/sp14"
+                        android:textAllCaps="false"
+                        android:singleLine="true"
+                        android:layout_marginEnd="@dimen/margin4"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/textColor"
+                        app:cornerRadius="@dimen/margin16"
+                        app:icon="@drawable/ic_phone"
+                        app:iconTint="@color/secondaryDarkColor"
+                        app:rippleColor="@color/white" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/sendInterestbt"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/callNowbt"
+                        android:layout_toStartOf="@id/fabStar"
+                        android:layout_centerHorizontal="true"
+                        android:text="Send interest"
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/sp14"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/textColor"
+                        app:cornerRadius="@dimen/margin16"
+                        app:icon="@drawable/ic_heart"
+                        app:iconTint="@color/red"
+                        app:rippleColor="@color/white" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fabStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_star"
+                        app:backgroundTint="@color/white"
+                        app:fabCustomSize="@dimen/margin32"
+                        app:maxImageSize="@dimen/margin16"
+                        app:shapeAppearanceOverlay="@style/fab_rounded"
+                        app:tint="@color/yellow" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/feedListLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/margin8"
+    android:layout_marginEnd="@dimen/margin8"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/functionLogo"
+            android:layout_width="@dimen/margin56"
+            android:layout_height="@dimen/margin56"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin8"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginEnd="@dimen/margin8"
+            android:src="@drawable/skpust_noname_logo"/>
+
+        <TextView
+            android:id="@+id/functionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/functionLogo"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin12"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp16"
+            android:text="Diwali"/>
+
+        <TextView
+            android:id="@+id/functionCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/functionLogo"
+            android:layout_below="@id/functionName"
+            android:textColor="@color/textColorHigh"
+            android:textSize="@dimen/sp16"
+            android:text="@string/vapi_gujarat"/>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/feedViewPageSlides"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin256"
+        android:layout_below="@id/titleLayout"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/feedimages_dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-56dp"
+        android:layout_marginBottom="@dimen/margin16"
+        app:dotsColor="@color/feedSliderDotIndicatorColor"
+        app:dotsSize="@dimen/margin8"
+        app:dotsSpacing="@dimen/margin4"
+        app:dotsWidthFactor="2.5"
+        app:progressMode="true"
+        android:layout_below="@id/feedViewPageSlides"
+        android:layout_centerHorizontal="true"
+        app:selectedDotColor="@color/feedSliderDotIndicatorColor" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin32"
+        app:cardElevation="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin32"
+        android:layout_marginEnd="@dimen/margin32"
+        android:layout_marginBottom="@dimen/margin24"
+        app:cardBackgroundColor="@color/white"
+        android:layout_below="@id/feedimages_dots_indicator"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:padding="@dimen/margin16"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivlike"
+                    android:layout_width="@dimen/margin24"
+                    android:layout_height="@dimen/margin24"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_heart"/>
+
+                <TextView
+                    android:id="@+id/functionLikeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/margin4"
+                    android:layout_toEndOf="@id/ivlike"
+                    android:text="125"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivcomment"
+                    android:layout_width="@dimen/margin24"
+                    android:layout_height="@dimen/margin24"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_comment"/>
+                <TextView
+                    android:id="@+id/functionCommentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:layout_marginStart="@dimen/margin4"
+                    android:textColor="@color/textColor"
+                    android:layout_toEndOf="@id/ivcomment"
+                    android:layout_centerInParent="true"
+                    android:text="45"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivshare"
+                    android:layout_width="@dimen/margin24"
+                    android:layout_height="@dimen/margin24"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_share"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

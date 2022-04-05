@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BusinessDetailFrag.BusinessDetailFrag">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingtoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:collapsedTitleTextAppearance="@style/CollapsedToolbarStyle"
+                app:contentScrim="@color/white"
+                app:expandedTitleTextAppearance="@style/ExpandedCollapsedToolbarStyle"
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                <ImageView
+                    android:id="@+id/businessImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin256"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/skpust_noname_logo" />
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin56"
+                    android:background="@color/toolbarTransparent"
+                    app:layout_collapseMode="pin" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeReferesh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin16"
+                    android:layout_marginEnd="@dimen/margin16"
+                    android:layout_marginBottom="@dimen/margin16"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin8">
+
+                        <RelativeLayout
+                            android:id="@+id/businessCategoryLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin12">
+
+                            <TextView
+                                android:id="@+id/businessLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:drawablePadding="@dimen/margin12"
+                                android:text="@string/dash"
+                                android:textColor="@color/textColorLow"
+                                android:textSize="@dimen/sp18"
+                                app:drawableStartCompat="@drawable/ic_location"
+                                app:drawableTint="@color/primaryLightColor" />
+
+                            <TextView
+                                android:id="@+id/businessCategory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/dash"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/sp18"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/businessDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin12"
+                            android:text="@string/dash"
+                            android:textColor="@color/textColorLow"
+                            android:textSize="@dimen/sp16" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gallery"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/businessImagesRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/since"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/businessFoundedDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:text="@string/dash"
+                            android:textColor="@color/textColorLow"
+                            android:textSize="@dimen/sp18"
+                            android:drawablePadding="@dimen/margin12"
+                            app:drawableStartCompat="@drawable/ic_calendar"
+                            app:drawableTint="@color/primaryLightColor"
+                            app:iconTint="@color/primaryLightColor"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/businessOwnerName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:text="@string/dash"
+                            android:textColor="@color/textColorHigh"
+                            android:textSize="@dimen/sp18" />
+
+                        <TextView
+                            android:id="@+id/businessContactNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin4"
+                            android:drawablePadding="@dimen/margin12"
+                            android:gravity="center_vertical"
+                            android:text="@string/dash"
+                            android:textColor="@color/textColorLow"
+                            android:textSize="@dimen/sp18"
+                            app:drawableStartCompat="@drawable/ic_phone"
+                            app:drawableTint="@color/primaryLightColor"
+                            app:iconTint="@color/primaryLightColor" />
+
+                        <TextView
+                            android:id="@+id/businessEmailId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            android:layout_marginEnd="@dimen/margin4"
+                            android:drawablePadding="@dimen/margin12"
+                            android:gravity="center_vertical"
+                            android:text="@string/dash"
+                            android:textColor="@color/textColorLow"
+                            android:textSize="@dimen/sp18"
+                            app:drawableStartCompat="@drawable/ic_email"
+                            app:drawableTint="@color/primaryLightColor"
+                            app:iconTint="@color/primaryLightColor" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin16"
+                        android:text="Business location"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/openBusinessLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin154"
+                        android:layout_marginTop="@dimen/margin8"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/map_image"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin16"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/businessAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin8"
+                            app:drawableStartCompat="@drawable/ic_location"
+                            app:drawableTint="@color/primaryLightColor"
+                            android:drawablePadding="@dimen/margin12"
+                            app:iconTint="@color/primaryLightColor"
+                            android:text="@string/dash"
+                            android:textColor="@color/textColorLow"
+                            android:textSize="@dimen/sp18" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabShareBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_share_old"
+            app:backgroundTint="@color/secondaryColor"
+            app:tint="@color/white"
+            android:layout_margin="@dimen/margin16"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentStart="true"
+            app:shapeAppearanceOverlay="@style/fab_square"
+            android:contentDescription="@string/todo" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

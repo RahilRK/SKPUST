@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">SKPUST</string>
+    <string name="app_fullname">Sawarastra Kadwapatidar Umiya Social Trust</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="next">Next</string>
+    <string name="login">Login</string>
+    <string name="login_successfully">Login successfully</string>
+    <string name="hold_on_setting_up_your_account">Hold on setting up your account</string>
+    <string name="setuppage">SetUpPage</string>
+    <string name="splashscreen">Splash Screen</string>
+    <string name="contactus">Contact Us</string>
+    <string name="welcome">Welcome</string>
+    <string name="matrimony">Matrimony</string>
+    <string name="matrimony_user_detail">Matrimony User Detail</string>
+    <string name="matrimony_user_detail_bottomsheet">Matrimony User Detail Bottom Sheet</string>
+    <string name="home">Home</string>
+    <string name="feed">Feed</string>
+    <string name="matches">Matches</string>
+    <string name="feed_detail">Feed Detail</string>
+    <string name="people">People</string>
+    <string name="people_detail">People Detail</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="menu">Menu</string>
+    <string name="_91_7405777863">+91 7405777863</string>
+    <string name="shubhamdev_emailid">shubhamdev@gmail.com</string>
+    <string name="shubham_developers">Shubham Developers</string>
+    <string name="sos">Emergency\nSOS</string>
+    <string name="builder">Builder</string>
+    <string name="vapi_gujarat">Vapi, Gujarat</string>
+    <string name="popular_business">Popular Business</string>
+    <string name="business_detail">Shubham Developers is Gujarat’s one of the greatest emerging real estate developers with signature projects especially in the cities of Ahmedabad, Vapi \u0026 Umbergaon. Commenced in 1991 by the hands of a highly skilled technical planner with a vision to create themed landscaping, Shubham Developers has transformed itself from a small company started into a whole concept company that engineers ideas into reality.</string>
+    <string name="business_address">608/A, Pinnacle Business Park, Corporate Road, Near Prahladnagar Garden Ahmedabad - 380015.</string>
+    <string name="businessowner">Akash Patel</string>
+    <string name="foundeddata">Since 1996</string>
+    <string name="address">Address</string>
+    <string name="owner">Owner</string>
+    <string name="logout">Logout</string>
+    <string name="share_business">Share Business</string>
+    <string name="search_business">Search Business</string>
+    <string name="search_people">Search People</string>
+    <string name="search_feed">Search Feed</string>
+    <string name="search_matrimony">Search Person</string>
+    <string name="dash"> - </string>
+    <string name="gallery">Gallery</string>
+    <string name="since">Since</string>
+    <string name="detail">Detail</string>
+    <string name="family">Family</string>
+    <string name="ganesh_chaturthi_detail">Ganesh Chaturthi is celebrated for a whole 11 days. It begins on the Chaturthi when people install the statue of Lord Ganesha in their homes and temples. This festival ends on Anant Chaturdashi with Ganesh Visarjan. The devotees of the Lord Ganesha offer their prayers to God. They sing devotional songs for him and recited various mantras in his praise. They perform aartis in favour of the lord and seek his blessings on them.</string>
+    <string name="janmashtami_detail">Since Lord Krishna was born at night, people celebrate Janmashtami at midnight. People follow a special means of celebrating Janmashtami. Since Lord Krishna loved to eat Makhan, people played sports with Makhan. They put the makhan in an earthen pot called a matki. The judge ties the makhan-filled matki very high above the ground. People play this game in groups. These people make a pyramid so tall that they can reach the matki tied above. Other teams try to stop them from reaching the matki. Every team has a definite time to reach matki. If any team fails to reach the matki before the time, then other teams are given a chance to reach the matki. This game is so interesting that many people come to see the sport.</string>
+    <string name="uttrayan_detail">The meaning of the word Makar Sankranti came from two words Makar and Sankranti. The meaning of Makar is Capricorn, and the meaning of Sankranti is the transition, which makes Makar Sankranti as the transition of the sun in the Capricorn (zodiac sign). It is a very auspicious and sacred occasion, according to Hinduism.The shift of sun into Capricorn keeps divine importance, and according to us Indians, we believe taking a dip in the holy river Ganga washes away all our sins and make our soul pure and blessed. This day signifies the increase of spiritual light and reduces the materialized darkness. According to science, Makar Sankranti has longer days and shorter nights.</string>
+    <string name="holi_detail">Holi is a festival to enjoy with your friends and family. People forget their troubles and revel in this festival to celebrate brotherhood. In several words, we tend to forget our enmities and realize them within the festival spirit. Holi’s essay in English is the name color as a result of people’s plays with colors. They apply them to each other’s faces to urge colored among the essence of the festival. The Hindu religion believes there was a devil king named Hiranya Kashyap method back. He had a son named Prahlad and a sister called Holika. It’s thought that the devil king had blessings of Lord Brahma. This blessing meant no man, animal, or weapon might kill him.</string>
+    <string name="diwali_detail">Diwali is the main festival of Hindu. Diwali is also called “Deepawali.” It is the famous festival of Diyas and fire cracks. Diwali is celebrated in November every year.Diwali Festival is celebrated in beginning of winter days with joy.  People buy sweets and distribute them to their family, friends, and loved ones. People clean up their houses and decorate with lights and flowers. People exchange gifts with their friends. People use to wear a new dress and children enjoy crackers etc.</string>
+    <string name="profile">Profile</string>
+    <string name="history">History</string>
+    <string name="about">About</string>
+    <string name="noInternetConnection">No internet connection found!</string>
+    <string name="todo">todo</string>
+    <!--    <string name="openDialer"><![CDATA[Vendor name: <font color=#000000> %1$s </font> ]]></string>-->
+    <string name="openDialer"><![CDATA[+91 <u> %1$s </u> ]]></string>
+    <string name="historyText">Patels are predominantly Gujarati and speak Gujarati language. They have deep social attachment in Gujarat and their home town and villages.
+Besides Gujarat and other parts of India, Patels are spread worldwide and have settled successfully in places like living in countries like USA, Canada, UK, East,
+Central and South Africa, Australia, New Zealand, the Far East, the Middle East. In fact, today you will find a Patel in almost any part of the world.
+\nThe Patel community account for 20 percent of Gujarat’s population, and is a dominating force in Saurastra and Kutch region. Majority of Patels are followers of
+Hinduism, a 5000 year old culture and most ancient civilization. In spite of having migrated to various parts of the world, Patels have cherished and preserved their
+cultural identity and rich legacy. They are proud of their ancestral values and maintained traditional rituals and customs
+        \nSo who are Patels? Word is that Patel derives from ‘ Patedar’, the record-keeper named by princely rulers to keep track of crops, ‘pat’ being a parcel of land.
+Evidently, their patedari now extends beyond crops and across countries and continents. They are highly visible and have earned more than just pat. They are from
+India, originally from the state of Gujarat. Under India’s old caste system, the Patels were of the Vaishya, or merchant caste. As merchant caste members, they were
+literally born to sell.
+\nPatel is a popular last name and people of different caste share the surname. There are Patels from major cities such as Mehsana, Ahemedabad and Surat. Rajput,
+Gujjar and Khwaja Patels are found mainly in the district of Baroda. Cutchi Leva Patels whose origins are mainly from the districts of Kutch and Charotar Patidar
+Patels hail from prosperous agricultural District of Kheda in Gujarat. Matiya Patidar Patels are located in Navsari and Bardoli Talukas, and other parts of India such as
+Surat, Indore, Vadodara, Ahmedabad. The Koli patels and the Dhodia Patels of South Gujarat also use Patel as their last name. The Patel surname is also found
+among Parsis , Brahmin and Gujarati Muslims, mainly from Bharuch, Surat, Kutch and Mumbai.
+        \nTwo groups in Gujarat make up the Patidar Patel community. The Leva Patels are said to be the descendents of Lava, son of Lord Rama ( or just residents of Lava
+Kingdom ) and the Kadva Patels who are said to be descendents of Kusha, son of Lord Rama (or just residents of Kusha kingdom.) Major population of these two
+groups belong to Mehsana and Kheda District in North Gujarat.
+\nThe Leva Patels and Kadva Patels are known for their entrepreneurial skills in business and agriculture having a strong hold in Gujarat and have made a name for
+themselves around the world. There are religious and ideological differences between various groups of Patels. They have their own social samaj ( gatherings ) and mandirs at various locations where they reside. The Patel community followed an age-old tradition of marrying within their ‘ GOL or circle, but with changes in
+economic status, global influence, literacy and education, changes are now taking place and Patels are increasingly marrying outside the Goals
+        \nAround AD 1000, the king of Afghanistan attacked and conquered Punjab. He and his soldiers committed great atrocities on the people of Punjab. The Hindus were
+forcefully converted to the Islam religion. They kidnapped and raped many of our women which forced them to commit suicide. Some of the women were converted to
+Islam and some soldiers married them in their traditional Islam style. To escape from the atrocities of the Afghan king and his soldiers and to save the women, our
+forefathers left Punjab. They were the KANBIS from Leava and KARAD villages of the GUJARANWALA district (presently in Pakistan).
+\nThese KANBI people came to MARVAD with their belongings on their bullock carts. At that time, Marvad was ruled by PARMAR kings and the fame of Rajah Bhoj
+was widely known. This was the reason our forefathers were attracted to that region. Marvad at that time was very densely populated and it was not possible to
+acquire enough land. So after staying for a short period in Marvad, they left for Kheda District of khambhat on hearing that there was plenty of uncultivated land
+available and this brought them to Gujarat. At this time the SOLANKIS were ruling GUJARAT. At a request to the SOLANKI king,the uncultivated land in the Taluka of
+PATLAD was granted to our forefathers. Land equivalent to about one GAM (village) was given to each family and the Kanbi people settled on this land. The Kanbis
+being hard workers managed to cultivate the land with great benefits. It was then decided that a twelfth portion of the crop would be given to the King in return for the
+land. But the cost of collecting this twelfth part from each farmer was very high so the king drew up an agreement and appointed a headman for each village. These
+headmen controlled the farmers and collected crops from them for the king. The land agreement was kept in the custody of the elders in the family of the headman.
+The records of the kingdom and of the crops were kept on the PAT (record or log book) and the person who entered and kept these records was known as "PATLIKH"
+Patlikh was shortened to PATAL and then became PATEL.
+\nThe people that came from the village Leava became known as LEAVA (LEVA) KANBI and those that came from the village KARAD became KARADVA KANBI. The
+Karadva was shortened to KADVA KANBI. The Kadva Kanbi settled in the Northern part of Gujarat and the Leava Kanbi settled around Khambhat. The people who
+settled in Gujarat were very industrious and intelligent and became farmers and in a short period of time, Gujarat started to prosper.
+\nAs time went by, the kings and the kingdoms changed and so did the portions of the crops given to the kings. Agriculture was the main source of income of the
+kingdoms and they were sustained by the income from the farms. So the payments were increased to one sixth part of all crops cultivated.
+\nLater Khambat region became the kingdom of the Mauryavansi and the crop collected from the farmers was different each year. It was high at times and low at the
+other times and was dictated as per the need of the kingdom and hence this part of the kingdom became known as CHAROTAR (from Chad climb up and Utar - climb
+down.) Charotar is the home of Leva Kanbi and Charotar Patidar Patels have their roots from this very prosperous agricultural region of Gujarat.
+</string>
+    <string name="call_us">Call Us</string>
+    <string name="mail_us">Mail Us</string>
+    <string name="chat_with_us">Chat With Us</string>
+    <string name="religion">Religion:</string>
+    <string name="cast">Cast:</string>
+    <string name="mother_tongue">Mother Tongue:</string>
+    <string name="marital_status">Marital Status:</string>
+    <string name="height">Height:</string>
+    <string name="birth_place">Birth Place:</string>
+    <string name="blood_group">Blood Group:</string>
+    <string name="qualification">Qualification:</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="basic_details">Basic Details</string>
+    <string name="hindu">Hindu</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_description">Enter description</string>
+    <string name="send">Send</string>
+    <string name="tap_above_to_pick_image">Tap above to pick image</string>
+    <string name="notification">Notification</string>
+    <string name="business_detail_title">Business Detail</string>
+    <string name="something_went_wrong">Something went wrong, please try again later</string>
+    <string name="softwarecompany_desc">We Provide Quick, Reliable, Outsourced Onsite And Remote IT Support Services. Call Today. Experienced IT Consultants On Team To Manage Your Company Infrastructure. IT Networking Experts. 10 Years of Experience. Onsite and Remote. Outsourced IT Services. Quick and Reliable Services.</string>
+
+</resources>

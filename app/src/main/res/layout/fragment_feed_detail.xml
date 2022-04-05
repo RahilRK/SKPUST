@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".ui.FeedDetailFrag.FeedDetailFrag">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin56"
+        android:background="@color/toolbarTransparent"
+        app:navigationIcon="@drawable/ic_left_arrow"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/functionLogo"
+            android:layout_width="@dimen/margin56"
+            android:layout_height="@dimen/margin56"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/margin8"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginEnd="@dimen/margin8"
+            android:src="@drawable/skpust_noname_logo"/>
+
+        <TextView
+            android:id="@+id/functionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/functionLogo"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"
+            android:text="Diwali"/>
+
+        <TextView
+            android:id="@+id/functionCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/functionLogo"
+            android:layout_below="@id/functionName"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"
+            android:text="@string/vapi_gujarat"/>
+
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/feedImageSliderViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin356"
+        android:layout_below="@id/titleLayout"
+        android:layout_marginTop="@dimen/margin8"
+        />
+
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedImageSliderViewPager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-24dp"
+        android:layout_marginBottom="@dimen/margin16"
+        app:dotsColor="@color/homeSliderDotIndicatorColor"
+        app:dotsSize="@dimen/margin12"
+        app:dotsSpacing="@dimen/margin4"
+        app:dotsWidthFactor="2.5"
+        app:progressMode="true"
+        app:selectedDotColor="@color/homeSliderDotIndicatorColor" />
+
+    <TextView
+        android:id="@+id/functionDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cardView"
+        android:layout_below="@id/feedImageSliderViewPager"
+        android:layout_marginStart="@dimen/margin12"
+        android:layout_marginTop="@dimen/margin12"
+        android:layout_marginEnd="@dimen/margin12"
+        android:layout_marginBottom="@dimen/margin12"
+        android:text="@string/business_detail"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin32"
+        app:cardElevation="@dimen/margin16"
+        android:layout_marginStart="@dimen/margin32"
+        android:layout_marginEnd="@dimen/margin32"
+        android:layout_marginBottom="@dimen/margin24"
+        app:cardBackgroundColor="@color/primaryLightColor"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:padding="@dimen/margin16"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivlike"
+                    android:layout_width="@dimen/margin24"
+                    android:layout_height="@dimen/margin24"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_heart"/>
+                <TextView
+                    android:id="@+id/functionLikeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:layout_marginStart="@dimen/margin4"
+                    android:textColor="@color/textColor"
+                    android:layout_toEndOf="@id/ivlike"
+                    android:layout_centerInParent="true"
+                    android:text="125"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivcomment"
+                    android:layout_width="@dimen/margin24"
+                    android:layout_height="@dimen/margin24"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_comment"/>
+                <TextView
+                    android:id="@+id/functionCommentCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp16"
+                    android:layout_marginStart="@dimen/margin4"
+                    android:textColor="@color/textColor"
+                    android:layout_toEndOf="@id/ivcomment"
+                    android:layout_centerInParent="true"
+                    android:text="45"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivshare"
+                    android:layout_width="@dimen/margin24"
+                    android:layout_height="@dimen/margin24"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_share"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

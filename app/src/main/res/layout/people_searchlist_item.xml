@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin12"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/margin8"
+        app:cardElevation="@dimen/margin8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin8"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/margin154"
+                android:layout_height="@dimen/margin154"
+                android:src="@drawable/skpust_noname_logo"
+                android:padding="@dimen/margin24"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:text="@string/businessowner"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/userCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin4"
+                android:textAlignment="center"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16"
+                android:singleLine="true"
+                android:text="@string/vapi_gujarat"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

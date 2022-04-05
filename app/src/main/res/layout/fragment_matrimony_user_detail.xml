@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/matrimonyUserSliderViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/toolbarTransparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_left_arrow_white" />
+
+    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:dotsColor="@color/homeSliderDotIndicatorColor"
+        app:dotsSize="@dimen/margin12"
+        app:dotsSpacing="@dimen/margin4"
+        app:dotsWidthFactor="2.5"
+        app:layout_constraintBottom_toBottomOf="@id/matrimonyUserSliderViewPager"
+        app:layout_constraintEnd_toEndOf="@+id/matrimonyUserSliderViewPager"
+        app:layout_constraintStart_toStartOf="@+id/matrimonyUserSliderViewPager"
+        app:layout_constraintTop_toTopOf="@+id/matrimonyUserSliderViewPager"
+        app:layout_constraintVertical_bias="0.72"
+        app:progressMode="true"
+        app:selectedDotColor="@color/homeSliderDotIndicatorColor" />
+
+    <RelativeLayout
+        android:id="@+id/sendInterestLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginEnd="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/matrimonyUserSliderViewPager"
+        app:layout_constraintTop_toBottomOf="@+id/dotsIndicator"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/callNowbt"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Call Now"
+            android:textSize="@dimen/sp14"
+            android:textAllCaps="false"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/margin4"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/textColor"
+            app:cornerRadius="@dimen/margin16"
+            app:icon="@drawable/ic_phone"
+            app:iconTint="@color/secondaryDarkColor"
+            app:rippleColor="@color/white" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendInterestbt"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/callNowbt"
+            android:layout_toStartOf="@id/fabStar"
+            android:layout_centerHorizontal="true"
+            android:text="Send interest"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textSize="@dimen/sp14"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/textColor"
+            app:cornerRadius="@dimen/margin16"
+            app:icon="@drawable/ic_heart"
+            app:iconTint="@color/red"
+            app:rippleColor="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_star"
+            app:backgroundTint="@color/white"
+            app:fabCustomSize="@dimen/margin32"
+            app:maxImageSize="@dimen/margin16"
+            app:shapeAppearanceOverlay="@style/fab_rounded"
+            app:tint="@color/yellow" />
+
+    </RelativeLayout>
+    
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/fragment_matrimony_user_detail_bottom_sheet" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
